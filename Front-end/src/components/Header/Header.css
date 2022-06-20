@@ -19,5 +19,11 @@
 
 .SearchBar input {
     width: 100px;
-    background-color: lightseagreen;
+    background-color: lightseagreen; 
 }
+
+.SearchBar button {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
