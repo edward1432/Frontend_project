@@ -6,29 +6,14 @@ import Header from './components/Header/Header';
 import HomePage from "./components/HomePage/HomePage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from 'react';
-import Header from './components/Header/Header';
 import MuseumLandingPage from './components/MuseumLandingPage/MuseumLandingPage';
 import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLandingPage';
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
 
-
-import HomePage from "./components/HomePage/HomePage";
-
 function App() {
 
   return (
-
-      <div className='App'>
-        <Router>
-          <Header />
-            <Routes>
-              <Route path="/" exact component={HomePage} />
-            </Routes>
-        </Router>
-      </div>
-  );
-
     <div>
       <Router>
         <Header />
@@ -41,7 +26,7 @@ function App() {
         </Routes>
       </Router>
     </div>
-  )
+  );
 
 }
 
