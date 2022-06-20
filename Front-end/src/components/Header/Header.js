@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import './Header.css';
 import { Link } from "react-router-dom";
 import { height, sizeWidth } from '@mui/system';
+import ReactSwitch from "react-switch";
+
+export const ThemeContext = createContext(null);
 
 function Header () {
 
@@ -11,6 +14,13 @@ function Header () {
   const toggleNavBar = () => {
     setOpenLinks(!openLinks);
   };
+
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
+
 
   return (
     <div className='navBar'>
@@ -21,11 +31,13 @@ function Header () {
         </div>
       </div>
 
+
       <div className='middle'>
         <div className='Title'>
           <h1>Muse360</h1>
         </div>
       </div>
+
 
       <div className='rightSide'>
         <div className='SearchBar'>
@@ -38,11 +50,12 @@ function Header () {
           <input type="text" placeholder="Search..."></input>
         </div>
 
-        {/* <div className='DarkModeButton'>
-          const [theme, setTheme] = useState("dark");
-
-          const toggle Theme
-        </div> */}
+        <div className='DarkModeButton'>
+          <label>
+            {theme === "light" ? "Light Mode" : "Dark Mode"}
+          </label>
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+        </div>
       </div>
 
     </div>

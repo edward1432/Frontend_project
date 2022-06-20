@@ -2,9 +2,10 @@
     display: grid;
     grid-template-columns: 10% 70% 20%;
     align-items: center;
-    height: 50px;
+    height: 100px;
     padding-left: 1%;
     margin-top: 1%;
+    background-color: aliceblue;
 }
 
 .navBar > div > img {
