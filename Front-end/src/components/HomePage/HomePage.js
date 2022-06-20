@@ -51,7 +51,7 @@ function HomePage() {
 </div>
 
 <div>
-    <button class="staff-button">Staff</button>
+    <button class="staff-button">Staff/Assignments</button>
 </div>
 </div>
 {/* Column */}
