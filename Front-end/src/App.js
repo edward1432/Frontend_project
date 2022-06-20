@@ -8,7 +8,8 @@ import MuseumLandingPage from './components/MuseumLandingPage/MuseumLandingPage'
 import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLandingPage';
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
-import HomePage from './components/HomePage/HomePage';
+
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
 
