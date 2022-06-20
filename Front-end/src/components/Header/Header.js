@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Header.css';
 import { Link } from "react-router-dom";
+import { height, sizeWidth } from '@mui/system';
 
 function Header () {
 
@@ -29,8 +30,10 @@ function Header () {
       <div className='rightSide'>
         <div className='SearchBar'>
           <img
+            width={15}
+            height={15}
             src="https://iconarchive.com/download/i60242/zerode/plump/Search.ico"
-            alt='Search icon'
+            alt='search icon image'
           />
           <input type="text" placeholder="Search..."></input>
         </div>

@@ -1,1 +1,22 @@
-.Header {}
+.navBar {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    align-items: center;
+    height: 50px;
+    padding-left: 1%;
+    margin-top: 1%;
+}
+
+.navBar > div > img {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.SearchBar {
+    display: flex;
+}
+
+.SearchBar input {
+    width: 100px;
+    background-color: lightseagreen;
+}
