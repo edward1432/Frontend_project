@@ -4,11 +4,11 @@ import Museums from './components/Museums/Museums';
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Home from './pages/Home';
 import MuseumLandingPage from './components/MuseumLandingPage/MuseumLandingPage';
 import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLandingPage';
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
+
 import HomePage from "./components/HomePage/HomePage";
 
 function App() {
