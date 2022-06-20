@@ -27,7 +27,7 @@ function HomePage() {
 </div>
 
 <div class = "row2">
-  <div class = "column">
+  <div class = "column1">
 <div class= "artefacts-box">
   <input type = "image" src = 'https://le.ac.uk/-/media/uol/images/academic-departments/archaeology/outreach/a2a2021.jpg?h=403&w=527&hash=907BEE8FCF48CC3F10F668BBF355603D' width = "600" height = "300"/>
 </div>
