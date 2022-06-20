@@ -13,10 +13,14 @@ import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
 
 function App() {
 
+
   return (
+    
     <div>
+      
       <Router>
         <Header />
+        
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/museumslanding' element={<MuseumLandingPage />}/>

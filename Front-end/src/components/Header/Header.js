@@ -13,6 +13,14 @@ function Header () {
   // const toggleNavBar = () => {
   //   setOpenLinks(!openLinks);
   // };
+  const [isClicked, setIsClicked] = useState(false)
+  function darkModebutton() {
+    let element = document.body;
+
+    element.classList.toggle("dark");
+
+    setIsClicked(isClicked => !isClicked);
+  }
 
 
   return (
@@ -38,21 +46,9 @@ function Header () {
           <button type="submit"><i class="fa fa-search"></i></button>
         </div>
 
-        {/* DARK MODE BUTTON */}
+        <button className="dark-mode-button" onClick={darkModebutton}>{isClicked ? "Dark" : "Light"}</button>
 
-        {/* <div className='DarkModeButton'>
-          <ThemeContext.Consumer>
-            {({changeTheme}) => (
-              <DarkModeToggle
-                color="link"
-                onChange={() => {
-                  changeTheme(darkMode ? themes.light : themes.dark);
-                }}
-              >
-                <i className={darkMode}
-
-            )}
-          </ThemeContext.Consumer> */}
+      
       </div>
 
     </div>
