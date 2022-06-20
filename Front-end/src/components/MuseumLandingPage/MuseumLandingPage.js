@@ -8,8 +8,8 @@ function MuseumLandingPage () {
     <>
       <div className="MuseumLandingPage">
         <Museums />
-        <button>Add a new museum</button><br></br>
-        <button>Delete a museum</button>
+        <button id="button">Add a new museum</button><br></br>
+        <button id="button">Delete a museum</button>
       </div>
     </>
   )
