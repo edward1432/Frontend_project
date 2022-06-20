@@ -1,10 +1,14 @@
-#light {
-  background-color: #f3ebf6;
-}
+.dark {
+  color: pink;
+  background-color: #292929; 
+  }
 
-#dark {
-  background-color: #46045e;
-}
+  .middle{
+    color: black;
+    text-align: center;
+
+  }
+
 .App {
   text-align: center;
 }
