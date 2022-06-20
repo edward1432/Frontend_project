@@ -27,9 +27,21 @@ function Header () {
     <div className='navBar'>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <div className='leftSide' id={openLinks ? "open" : "close"}>
+        <div class = "leftBar">
+          <div class = "Row">
+            
+            <div class = "Column">
         <div className='Home'>
           <Link to="/">Home</Link>
+          </div>
         </div>
+        <div class = "Column">
+        <div className = "Help">
+          <Link to = "/">Help!</Link>
+          </div>
+        </div>
+        </div>
+      </div>
       </div>
 
 
