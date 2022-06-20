@@ -9,6 +9,7 @@ import MuseumLandingPage from './components/MuseumLandingPage/MuseumLandingPage'
 import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLandingPage';
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />}/>
+          <Route path='/' element={<HomePage />}/>
           <Route path='/museumslanding' element={<MuseumLandingPage />}/>
           <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
           <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>

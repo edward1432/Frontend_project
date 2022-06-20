@@ -1,34 +1,71 @@
 .HomePage {}
 
-#image-container{
-    display: flex;
-    
-}
 
-/* .museum-box {
-     width: 300px;
-} */
-
-
-
-
-.museum-box-text{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.row1 {
-    display: block;
-    margin-left: auto;
-  width: 40%;
-}
-
-.row2{
-    display:block;
-    margin-right: auto;
-    width: 40%;
+.museum-box {
+  width: 300px;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 
+.museum-picture {
+  width: 300px;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.exhibit-box {
+  width: 300px;
+  display: inline-block;
+  
+}
+
+.exhibit-picture {
+  width: 300px;
+  height: 168px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+
+.artefact-box {
+  width: 300px;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.artefact-picture {
+  width: 300px;
+  height: 168px;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 15px;
+
+}
+
+
+.staff-box {
+  width: 300px;
+  display: inline-block;
+  
+}
+
+.staff-picture {
+  width: 300px;
+  height: 168px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.museum-button, .exhibit-button, .artefact-button, .staff-button {
+  height: 25px;
+  width: 150px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: block;
+  margin-left: 75px;
+}

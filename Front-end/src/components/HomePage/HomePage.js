@@ -6,42 +6,58 @@ function HomePage() {
 
   return(
     <>
-  <div class="HomePage">
-    HomePage Component
-  </div>
-<div id= "image-container">
-
-<div class = "row1">
-  <div class = "column">
-<div class="museum-box">
-    <div id="museum-pic"><input type = "image" src = "https://media.timeout.com/images/105625670/750/422/image.jpg" width = "600" height = "300"  alt = "museum picture"/></div>
+    <div class = "row1">
+      <div class = "column">
+      <div class="museum-box">
+<div> 
+    <img class="museum-picture" src="https://cdn.londonandpartners.com/assets/attractions/culture/3516-640x360-great_court_large.jpg"></img>
 </div>
+<div>
+    <button class="museum-button">Museums</button>
 </div>
 
-<div class = "column">
+</div>
 
-<div class="exhibits-box">
-  <input type="image" src='https://www.memphis.edu/egypt/exhibit/galleryview.jpg' width = "600" height = "300"  />
+<div class="exhibit-box">
+<div>
+    <img class="exhibit-picture" src="https://libraries.mit.edu/exhibits/files/cropped-gallery-web.jpg"></img>
+</div>
+
+<div>
+    <button class="exhibit-button">Exhibits</button>
 </div>
 </div>
+{/* Column */}
+</div> 
+{/* Row */}
 </div>
 
 <div class = "row2">
-  <div class = "column">
-<div class= "artefacts-box">
-  <input type = "image" src = 'https://le.ac.uk/-/media/uol/images/academic-departments/archaeology/outreach/a2a2021.jpg?h=403&w=527&hash=907BEE8FCF48CC3F10F668BBF355603D' width = "600" height = "300"/>
+      <div class = "column2">
+      <div class="artefact-box">
+<div> 
+    <img class="artefact-picture" src="https://le.ac.uk/-/media/uol/images/academic-departments/archaeology/outreach/a2a2021.jpg?h=403&w=527&hash=907BEE8FCF48CC3F10F668BBF355603D"></img>
 </div>
-</div>
-
-<div class = "column">
-
-<div class="staff/assignments-box">
-  <input type="image" src='https://png.pngitem.com/pimgs/s/16-169527_team-silhouettes-corporate-human-group-office-employee-silhouette.png' width = "600" height = "300"  />
-</div>
-</div>
+<div>
+    <button class="artefact-button">Artefacts</button>
 </div>
 
 </div>
+
+<div class="staff-box">
+<div>
+    <img class="staff-picture" src="https://png.pngitem.com/pimgs/s/16-169527_team-silhouettes-corporate-human-group-office-employee-silhouette.png"></img>
+</div>
+
+<div>
+    <button class="staff-button">Staff</button>
+</div>
+</div>
+{/* Column */}
+</div> 
+{/* Row */}
+</div>
+
 
 
 </>
