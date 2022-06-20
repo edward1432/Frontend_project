@@ -32,6 +32,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/museum")
+@CrossOrigin(origins = "http://localhost:3000")
 public class MuseumController {
 
     //   MuseumController Properties
