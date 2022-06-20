@@ -28,6 +28,10 @@ function Header () {
 
       <div className='rightSide'>
         <div className='SearchBar'>
+          <img
+            src="https://iconarchive.com/download/i60242/zerode/plump/Search.ico"
+            alt='Search icon'
+          />
           <input type="text" placeholder="Search..."></input>
         </div>
 
