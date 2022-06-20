@@ -1,6 +1,12 @@
 .HomePage {}
 
+section{
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 
+}
 .museum-box {
   width: 300px;
   display: inline-block;
@@ -67,4 +73,9 @@
   cursor: pointer;
   display: block;
   margin-left: 75px;
+}
+
+.museum-button:hover, .exhibit-button:hover, .staff-button:hover, .artefact-button:hover{
+  background-color: black;
+  color: pink;
 }
