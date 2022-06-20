@@ -6,13 +6,14 @@ function HomePage() {
 
   return(
     <>
+    <section>
     <div class = "row1">
       <div class = "column">
       <div class="museum-box">
 <div> 
     <img class="museum-picture" src="https://cdn.londonandpartners.com/assets/attractions/culture/3516-640x360-great_court_large.jpg"></img>
 </div>
-<div>
+<div class = "museum-button-container">
     <button class="museum-button">Museums</button>
 </div>
 
@@ -57,7 +58,7 @@ function HomePage() {
 </div> 
 {/* Row */}
 </div>
-
+</section>
 
 
 </>
