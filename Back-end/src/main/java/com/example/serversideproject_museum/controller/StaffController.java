@@ -30,6 +30,7 @@ import java.util.*;
 
 
 @RequestMapping("/staff")
+@CrossOrigin(origins = "http://localhost:3000")
 public class StaffController {
 
     @Autowired

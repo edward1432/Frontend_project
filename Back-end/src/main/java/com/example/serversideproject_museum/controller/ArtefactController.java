@@ -38,6 +38,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/artefact")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ArtefactController {
 
     @Autowired
