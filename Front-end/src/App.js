@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Museums from './components/Museums/Museums';
+// import Museums from './components/Museums/Museums';
 import { createContext, useState } from "react";
 import Header from './components/Header/Header';
 import HomePage from "./components/HomePage/HomePage";

@@ -1,13 +1,13 @@
 import React from 'react';
-import Museums from '../Museums/Museums';
 import './MuseumLandingPage.css';
+import Museum from '../Museums/Museum';
 
 function MuseumLandingPage () {
     
   return(
     <>
       <div className="MuseumLandingPage">
-        <Museums />
+        <Museum />
         <button id="button">Add a new museum</button><br></br>
         <button id="button">Delete a museum</button>
       </div>

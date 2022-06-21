@@ -24,6 +24,7 @@ const Exhibits = () => {
       }
     </ul>
   )
+  
 
 }
 
