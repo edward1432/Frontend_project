@@ -10,11 +10,13 @@ import MuseumLandingPage from './components/MuseumLandingPage/MuseumLandingPage'
 import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLandingPage';
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
-
+import MuseumContainer from './Containers/MuseumContainer';
 function App() {
 
 
   return (
+
+    // <MuseumContainer />
     
     <div>
       
