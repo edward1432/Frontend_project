@@ -11,6 +11,8 @@ import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLan
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
 import MuseumContainer from './Containers/MuseumContainer';
+import MuseumPage from './components/Museums/MuseumPage';
+
 function App() {
 
 
@@ -26,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/museumslanding' element={<MuseumLandingPage />}/>
+          <Route path='/museumpage' element={<MuseumPage />}/>
           <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
           <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
           <Route path='/stafflanding' element={<StaffLandingPage />}/>
