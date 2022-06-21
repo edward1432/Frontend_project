@@ -19,7 +19,7 @@ const GetMuseums = () => {
     <ul>
       {
         museums.map(museum =>
-          <li key={museum.id} onClick={}>{`${museum.name}`}</li>
+          <li key={museum.id}>{`${museum.name}`}</li>
           )
       }
     </ul>
