@@ -13,17 +13,18 @@ const MuseumCreate = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-  }
+
 
   const museum = {
     "name": name,
     "country": country
   }
 
-  axios.post('http://127.0.0.1:8080/museum/create', museum)
+  axios.post('http://127.0.0.1:8080/museum', museum)
   .then(res =>{
     console.log(res);
   }).catch((err) => console.log(err));
+}
 
   return (
     <div>
