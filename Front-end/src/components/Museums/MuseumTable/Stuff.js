@@ -1,45 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import axios from 'axios';
-import {useState, useEffect} from 'react';
-
-const MuseumCreate = () => {
-
-  const [name, setName] = useState('');
-  const [country, setCountry] = useState('');
-
-  const handleNameChange = event => setName(event.target.value);
-  const handleSelect = (e) =>{
-    setCountry(e.target.value);
-  }
-  // const handleCountryChange = event => setCountry(event.target.value);
-
-  const handleSubmit = event => {
-    event.preventDefault();
-
-
-  const museum = {
-    "name": name,
-    "country": country
-  }
-// ?name=${name}&country=${country}
-  // null, { params: museum}
-  axios.post(`http://127.0.0.1:8080/museum/create?name=${name}&country=${country}`)
-
-  .then(res =>{
-    console.log(res);
-  }).catch((err) => console.log(err));
-}
-
-  return (
-    <div>
-      <form onSubmit = {handleSubmit}>
-        <label>
-          Museum Name:
-          <input type = "text" name = "name" onChange = {handleNameChange} />
-        </label><br></br>
-        
-<select name = "country" onChange = {handleSelect}>
+<select class="">
 <option value="Afghanistan">Afghanistan</option>
 <option value="Albania">Albania</option>
 <option value="Algeria">Algeria</option>
@@ -236,13 +195,3 @@ const MuseumCreate = () => {
 <option value="Zambia">Zambia</option>
 <option value="Zimbabwe">Zimbabwe</option>
 </select>
-        <button type = "submit" id="button">Add a new museum</button><br></br>
-        <br></br>
-      </form>
-    </div>
-  )
-}
-
-
-
-export default MuseumCreate;
