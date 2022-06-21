@@ -5,6 +5,7 @@ import Exhibits from '../Exhibits/Exhibits';
 import GetExhibitById from '../Exhibits/Axios/GetExhibitById';
 import CreateExhibit from '../Exhibits/Axios/CreateExhibit';
 import UpdateExhibit from '../Exhibits/Axios/UpdateExhibit';
+import DeleteExhibit from '../Exhibits/Axios/DeleteExhibit';
 
 function ExhibitLandingPage () {
     
@@ -15,6 +16,7 @@ function ExhibitLandingPage () {
         <GetExhibitById />
         <CreateExhibit />
         <UpdateExhibit />
+        <DeleteExhibit />
 
       </div>
     </>
