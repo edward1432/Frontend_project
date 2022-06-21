@@ -4,6 +4,7 @@ import './ExhibitLandingPage.css';
 import Exhibits from '../Exhibits/Exhibits';
 import GetExhibitById from '../Exhibits/Axios/GetExhibitById';
 import CreateExhibit from '../Exhibits/Axios/CreateExhibit';
+import UpdateExhibit from '../Exhibits/Axios/UpdateExhibit';
 
 function ExhibitLandingPage () {
     
@@ -13,6 +14,7 @@ function ExhibitLandingPage () {
         <Exhibits />
         <GetExhibitById />
         <CreateExhibit />
+        <UpdateExhibit />
 
       </div>
     </>
