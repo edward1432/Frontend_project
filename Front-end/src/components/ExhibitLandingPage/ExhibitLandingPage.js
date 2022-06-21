@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ExhibitLandingPage.css';
+import Exhibits from '../Exhibits/Exhibits';
 
-const ExhibitLandingPage = () => (
-  <div className="ExhibitLandingPage">
-    ExhibitLandingPage Component
-  </div>
-);
+function ExhibitLandingPage () {
+    
+  return(
+    <>
+      <div className="ExhibitLandingPage">
+        <Exhibits />
 
-ExhibitLandingPage.propTypes = {};
-
-ExhibitLandingPage.defaultProps = {};
+      </div>
+    </>
+  )
+  };
 
 export default ExhibitLandingPage;
