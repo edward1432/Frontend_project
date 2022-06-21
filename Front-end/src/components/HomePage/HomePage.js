@@ -14,7 +14,9 @@ function HomePage() {
     <img class="museum-picture" src="https://cdn.londonandpartners.com/assets/attractions/culture/3516-640x360-great_court_large.jpg"></img>
 </div>
 <div class = "museum-button-container">
+    <a href = "http://localhost:3000/museumslanding">
     <button class="museum-button">Museums</button>
+    </a>
 </div>
 
 </div>
