@@ -12,6 +12,10 @@ const MuseumDeleteById = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
+    const museum = {
+      "id": id
+    }
+
 
   const museum = {
     "id": id,
