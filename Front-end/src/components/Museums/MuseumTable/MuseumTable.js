@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useMemo, useRef } from "react";
-import TutorialDataService from "../services/TutorialService";
 import { useTable } from "react-table";
 import axios from 'axios';
 
@@ -20,7 +19,6 @@ const MuseumsList = (props) => {
   );
   const openMuseum = (rowIndex) => {
     const id = museumsRef.current[rowIndex].id;
-
     props.history.push("/museums/" + id);
   };
 
