@@ -75,6 +75,7 @@ a:link { text-decoration: none; }
   cursor: pointer;
   display: block;
   margin-left: 75px;
+  border: 2px solid black;
 }
 
 .museum-button:hover, .exhibit-button:hover, .staff-button:hover, .artefact-button:hover{
