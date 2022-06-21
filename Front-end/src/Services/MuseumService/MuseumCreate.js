@@ -20,7 +20,7 @@ const MuseumCreate = () => {
     "country": country
   }
 
-  axios.post('http://127.0.0.1:8080/museum/create', museum)
+  axios.post('http://127.0.0.1:8080/museum/create', null, { params: museum})
   .then(res =>{
     console.log(res);
   }).catch((err) => console.log(err));

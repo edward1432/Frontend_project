@@ -12,12 +12,11 @@ const MuseumDeleteById = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
+    const museum = {
+      "id": id
+    }
 
-  const museum = {
-    "id": id,
-  }
-
-  axios.delete(`http://127.0.0.1:8080/museum/delete`, {id})
+  axios.delete(`http://127.0.0.1:8080/museum/delete/${museum.id}`)
   .then(res =>{
     console.log(res);
   }).catch((err) => console.log(err));
