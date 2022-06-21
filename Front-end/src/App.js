@@ -16,22 +16,22 @@ function App() {
 
   return (
 
-    <MuseumContainer />
+    // <MuseumContainer />
     
-    // <div>
+    <div>
       
-    //   <Router>
-    //     <Header />
+      <Router>
+        <Header />
         
-    //     <Routes>
-    //       <Route path='/' element={<HomePage />}/>
-    //       <Route path='/museumslanding' element={<MuseumLandingPage />}/>
-    //       <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
-    //       <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
-    //       <Route path='/stafflanding' element={<StaffLandingPage />}/>
-    //     </Routes>
-    //   </Router>
-    // </div>
+        <Routes>
+          <Route path='/' element={<HomePage />}/>
+          <Route path='/museumslanding' element={<MuseumLandingPage />}/>
+          <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
+          <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
+          <Route path='/stafflanding' element={<StaffLandingPage />}/>
+        </Routes>
+      </Router>
+    </div>
   );
 
 }
