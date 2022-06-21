@@ -38,6 +38,7 @@ const MuseumCreate = () => {
           <input type = "text" name = "country" onChange = {handleCountryChange} />
         </label><br></br>
         <button type = "submit" id="button">Add a new museum</button><br></br>
+        <br></br>
       </form>
     </div>
   )
