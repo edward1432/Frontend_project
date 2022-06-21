@@ -19,7 +19,7 @@ const Exhibits = () => {
     <ul>
       {
         exhibits.map(exhibit =>
-          <li key={exhibit.id}>{`${exhibit.name} | ${exhibit.museum}`}</li>
+          <li key={exhibit.id}>{`${exhibit.name} | ${exhibit.museum.name}`}</li>
           )
       }
     </ul>
