@@ -17,13 +17,13 @@ const Museum = () => {
   );
 
   return (
-    <ul>
+    <ol>
       {
         museums.map(museum =>
           <li key={museum.id}>{`${museum.name} | ${museum.country}`}</li>
           )
       }
-    </ul>
+    </ol>
   )
 
 }

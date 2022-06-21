@@ -2,7 +2,7 @@ import React from 'react';
 import './MuseumLandingPage.css';
 import Museum from '../Museums/Museum';
 import MuseumCreate from '../../Services/MuseumService/MuseumCreate';
-
+import MuseumDeleteById from '../../Services/MuseumService/MuseumDeleteById';
 function MuseumLandingPage () {
     
   return(
@@ -10,7 +10,7 @@ function MuseumLandingPage () {
       <div className="MuseumLandingPage">
         <Museum />
         <MuseumCreate />
-        <button id="button">Delete a museum</button>
+        <MuseumDeleteById />
       </div>
     </>
   )
