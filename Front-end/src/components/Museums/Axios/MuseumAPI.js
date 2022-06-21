@@ -17,3 +17,11 @@ export function getMuseum(setMuseum, id) {
     setMuseum(museum);
   }).catch((err) => console.log(err));
 }
+
+export function deleteMuseum(setMuseums, id) {
+  axios.delete(`http://127.0.0.1:8080/museum/delete/${id}`)
+  .then(res => {
+    alert(`Museum deleted`);
+    getMuseums(setMuseums);
+  }).catch((err) => console.log(err));
+}

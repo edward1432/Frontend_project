@@ -12,7 +12,6 @@ function MuseumLandingPage () {
         <MuseumList />
         <MuseumGetById />
         <MuseumCreate />
-        <MuseumDeleteById />
       </div>
     </>
   )
