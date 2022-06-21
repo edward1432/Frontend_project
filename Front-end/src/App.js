@@ -10,26 +10,28 @@ import MuseumLandingPage from './components/MuseumLandingPage/MuseumLandingPage'
 import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLandingPage';
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
-
+import MuseumContainer from './Containers/MuseumContainer';
 function App() {
 
 
   return (
+
+    <MuseumContainer />
     
-    <div>
+    // <div>
       
-      <Router>
-        <Header />
+    //   <Router>
+    //     <Header />
         
-        <Routes>
-          <Route path='/' element={<HomePage />}/>
-          <Route path='/museumslanding' element={<MuseumLandingPage />}/>
-          <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
-          <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
-          <Route path='/stafflanding' element={<StaffLandingPage />}/>
-        </Routes>
-      </Router>
-    </div>
+    //     <Routes>
+    //       <Route path='/' element={<HomePage />}/>
+    //       <Route path='/museumslanding' element={<MuseumLandingPage />}/>
+    //       <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
+    //       <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
+    //       <Route path='/stafflanding' element={<StaffLandingPage />}/>
+    //     </Routes>
+    //   </Router>
+    // </div>
   );
 
 }
