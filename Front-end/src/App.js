@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/museumslanding' element={<MuseumLandingPage />}/>
-          <Route path='/museumpage' element={<MuseumPage />}/>
+          <Route path='/museumpage/:id' element={<MuseumPage />}/>
           <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
           <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
           <Route path='/stafflanding' element={<StaffLandingPage />}/>
