@@ -17,7 +17,7 @@ const MuseumDeleteById = () => {
     "id": id,
   }
 
-  axios.delete(`http://127.0.0.1:8080/museum/${museum}`)
+  axios.delete(`http://127.0.0.1:8080/museum/delete`, {id})
   .then(res =>{
     console.log(res);
   }).catch((err) => console.log(err));
