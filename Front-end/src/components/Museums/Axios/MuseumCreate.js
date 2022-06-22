@@ -4,6 +4,7 @@ import { createMuseum, getMuseums} from './MuseumAPI';
 const MuseumCreate = () => {
 
   const [name, setName] = useState('');
+  const [museums, setMuseums] = useState([])
   const [country, setCountry] = useState('Afghanistan');
 
   const handleNameChange = event => setName(event.target.value);
@@ -23,8 +24,6 @@ const MuseumCreate = () => {
     "name": name,
     "country": country
   }
-// ?name=${name}&country=${country}
-  // null, { params: museum}
   axios.post(`http://127.0.0.1:8080/museum/create?name=${name}&country=${country}`)
 
   .then(res =>{
