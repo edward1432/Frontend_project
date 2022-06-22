@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getMuseum } from "./Axios/MuseumAPI";
 import {useState} from "react";
@@ -8,10 +8,15 @@ function MuseumPage () {
 
     const params = useParams();
     const [museum, setMuseum] = useState({});
+    const [exhibits, setExhibits] = useState([]);
 
     if (!museum.id){
     getMuseum(setMuseum, params.id);
     }
+
+    useEffect(() => {
+        setExhibits(museum.exhibits);
+    })
 
     return(
         <>
@@ -20,7 +25,7 @@ function MuseumPage () {
         </div>
         <div>
             <ol>
-                {museum.exhibits.map(exhibit => 
+                {exhibits.map(exhibit => 
                     <li key={exhibit.id}>
                         {exhibit.name}
                     </li>)}
