@@ -24,11 +24,12 @@ export function hireStaff (setStaff, staff) {
     }).catch((err) => console.log(err));
 }
 
-export function updateExhibit (setExhibit, exhibit) {
-    axios.put(`http://127.0.0.1:8080/exhibit/update/${id}?&name=${exhibit.name}`)
+
+export function updateStaff (setStaff, staff) {
+    axios.put(`http://127.0.0.1:8080/staff/${staff.id}/exhibit/${exhibit.id}`)
   .then(res =>{
     console.log(res);
-    getAllExhibits(setExhibit);
+    getAllStaff(setStaff);
   }).catch((err) => console.log(err));
 }
 
