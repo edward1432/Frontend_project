@@ -1,15 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ArtefactsLandingPage.css';
+import Artefacts from '../Artefacts/Artefacts';
+import GetAllArtefacts from '../Artefacts/Axios/GetAllArtefacts';
 
-const ArtefactsLandingPage = () => (
-  <div className="ArtefactsLandingPage">
-    ArtefactsLandingPage Component
-  </div>
-);
+function ArtefactsLandingPage () {
+    
+  return(
+    <>
+      <div className="ArtefactsLangingPage">
+        <Artefacts />
+        <GetAllArtefacts />
 
-ArtefactsLandingPage.propTypes = {};
-
-ArtefactsLandingPage.defaultProps = {};
+      </div>
+    </>
+  )
+  };
 
 export default ArtefactsLandingPage;
