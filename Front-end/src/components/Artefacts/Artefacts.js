@@ -8,7 +8,7 @@ const Artefacts = () => {
   const [artefacts, setArtefacts] = useState([]);
 
   useEffect(() => {
-          axios.get('http://127.0.0.1:8080/artefacts')
+          axios.get('http://127.0.0.1:8080/artefact')
             .then(res => {
               const artefacts = res.data;
               setArtefacts(artefacts);
@@ -20,7 +20,7 @@ const Artefacts = () => {
     <ul>
       {
           artefacts.map(artefact =>
-            <li key={artefact.id}>{`${artefact.name} | ${artefact.exhibits}`}</li>
+            <li key={artefact.id}>{`${artefact.name} | ${artefact.creator} | ${artefact.date} | ${artefact.country}`}</li>
           )
       }
     </ul>

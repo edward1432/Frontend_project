@@ -43,8 +43,10 @@ function HomePage() {
 <div> 
     <img class="artefact-picture" src="https://le.ac.uk/-/media/uol/images/academic-departments/archaeology/outreach/a2a2021.jpg?h=403&w=527&hash=907BEE8FCF48CC3F10F668BBF355603D"></img>
 </div>
-<div>
+<div class = "artefact-button-container">
+    <a href='artefactslanding'>
     <button class="artefact-button">Artefacts</button>
+    </a>
 </div>
 
 </div>
