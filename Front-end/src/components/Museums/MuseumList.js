@@ -4,7 +4,9 @@ import { getMuseums, deleteMuseum } from "./Axios/MuseumAPI";
 import { useState } from 'react';
 
 const MuseumList = () => {
+
   const [museums, setMuseums] = useState([]);
+
 
   useEffect(() => {
     getMuseums(setMuseums);
