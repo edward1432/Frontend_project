@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import {useState, useEffect} from 'react';
-import { getMuseum } from './MuseumAPI';
+import { getMuseum } from './Axios/MuseumAPI';
 import { useNavigate } from 'react-router-dom';
 
 const MuseumGetById = () => {
@@ -17,8 +17,13 @@ const MuseumGetById = () => {
     const museum = {
       "id": id
     }
-    getMuseum(id);
-    navigate("/museumpage/" + museum.id);
+    try {
+      getMuseum(id);
+      navigate("/museumpage/" + museum.id);
+    } catch (err) {
+      alert(err)
+    }
+
 }
 
   return (

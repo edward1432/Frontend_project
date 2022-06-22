@@ -11,7 +11,7 @@ export function getMuseum(setMuseum, id) {
   axios.get('http://127.0.0.1:8080/museum/' + id).then(res => {
     const museum = res.data;
     setMuseum(museum);
-  }).catch((err) => console.log(err));
+  });
 }
 
 export function deleteMuseum(setMuseums, id) {

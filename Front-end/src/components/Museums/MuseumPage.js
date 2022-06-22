@@ -25,7 +25,7 @@ function MuseumPage () {
         </div>
         <div>
             <ol>
-                {exhibits.map(exhibit => 
+                {exhibits && exhibits.map(exhibit => 
                     <li key={exhibit.id}>
                         {exhibit.name}
                     </li>)}

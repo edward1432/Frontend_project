@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import HomePage from "./components/HomePage/HomePage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from 'react';
-import MuseumLandingPage from './components/MuseumLandingPage/MuseumLandingPage';
+import MuseumLandingPage from './components/Museums/MuseumLandingPage/MuseumLandingPage';
 import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLandingPage';
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';

@@ -1,8 +1,8 @@
 import React from 'react';
 import './MuseumLandingPage.css';
-import MuseumCreate from '../Museums/MuseumCreate';
-import MuseumGetById from '../Museums/Axios/MuseumGetById';
-import MuseumList from '../Museums/MuseumList';
+import MuseumCreate from '../MuseumCreate';
+import MuseumGetById from '../MuseumGetById';
+import MuseumList from '../MuseumList';
 function MuseumLandingPage () {
     
   return(
