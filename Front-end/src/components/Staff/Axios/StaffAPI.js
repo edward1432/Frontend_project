@@ -8,11 +8,11 @@ export function getAllStaff (setStaff) {
     }).catch((err) => console.log(err));
 }
 
-export function getExhibitById (setExhibit, id) {
-    axios.get(`http://127.0.0.1:8080/exhibit/${id}`)
+export function getStaffById (setStaff, id) {
+    axios.get(`http://127.0.0.1:8080/staff/${id}`)
   .then(res =>{
     console.log(res);
-    getAllExhibits(setExhibit);
+    getAllStaff(setStaff);
   }).catch((err) => console.log(err));
 }
 
