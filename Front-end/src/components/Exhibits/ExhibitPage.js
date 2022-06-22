@@ -22,7 +22,6 @@ function ExhibitPage () {
         <>
         <div className = "exhibit-page">
             <h1>{exhibit.name}</h1>
-            <h2>Currently housed in the {exhibit.museum.name}</h2>
         </div>
         <div>
             <ol>

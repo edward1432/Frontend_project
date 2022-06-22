@@ -5,15 +5,14 @@ export function getAllExhibits (setExhibits) {
     .then(res => {
       const exhibits = res.data;
       setExhibits(exhibits);
-    }).catch((err) => console.log(err));
+    })
 }
 
 export function getExhibitById (setExhibit, id) {
-    axios.get(`http://127.0.0.1:8080/exhibit/${id}`)
-  .then(res =>{
-    console.log(res);
-    getAllExhibits(setExhibit);
-  }).catch((err) => console.log(err));
+    axios.get(`http://127.0.0.1:8080/exhibit/` + id).then(res =>{
+    const exhibit = res.data;
+    setExhibit(exhibit);
+  })
 }
 
 // export function createExhibit (setExhibits, exhibit) {
