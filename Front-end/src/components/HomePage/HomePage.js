@@ -57,7 +57,9 @@ function HomePage() {
 </div>
 
 <div>
+    <a href = "stafflanding">
     <button class="staff-button">Staff/Assignments</button>
+    </a>
 </div>
 </div>
 {/* Column */}
