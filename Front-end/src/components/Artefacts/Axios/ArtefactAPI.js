@@ -15,3 +15,11 @@ export function getArtefactByExhibitId (setArtefact, id) {
     getArtefactByExhibitId(setArtefact);
   }).catch((err) => console.log(err));
 }
+
+export function getArtefactByCountry (setArtefact, country) {
+  axios.get(`http://127.0.0.1:8080/artefact//${country}`)
+  .then(res =>{
+    console.log(res);
+    getArtefactByCountry(setArtefact);
+  }).catch((err) => console.log(err));
+}
