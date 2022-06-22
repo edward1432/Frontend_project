@@ -9,9 +9,9 @@ const MuseumCreate = () => {
   const [country, setCountry] = useState('');
 
   const handleNameChange = event => setName(event.target.value);
-  const handleSelect = (e) =>{
-    setCountry(e.target.value);
-  }
+  const handleSelect = event =>
+    setCountry(event.target.value);
+  
   // const handleCountryChange = event => setCountry(event.target.value);
 
   const handleSubmit = event => {
