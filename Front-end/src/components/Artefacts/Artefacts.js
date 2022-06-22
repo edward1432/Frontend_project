@@ -3,27 +3,32 @@ import PropTypes from 'prop-types';
 import './Artefacts.css';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import { getAllArtefacts, deleteArtefact } from './Axios/ArtefactAPI';
 
 const Artefacts = () => {
   const [artefacts, setArtefacts] = useState([]);
 
   useEffect(() => {
-          axios.get('http://127.0.0.1:8080/artefact')
-            .then(res => {
-              const artefacts = res.data;
-              setArtefacts(artefacts);
-            }).catch((err) => console.log(err));
-    },[]
-  );
+    getAllArtefacts(setArtefacts);
+  })
+  
+  function deleteArte(id) {
+    deleteArtefact(setArtefacts, id);
+  }
 
   return (
-    <ul>
+    <ol>
       {
           artefacts.map(artefact =>
-            <li key={artefact.id}>{`${artefact.name} | ${artefact.creator} | ${artefact.date} | ${artefact.country}`}</li>
+            <li key={artefact.id}>
+            <a href = {"artefactpage/" + artefact.id}>
+            {`${artefact.name} | ${artefact.creator} | ${artefact.date} | ${artefact.country}`}
+            </a>
+            <button onClick={()=>deleteArte(artefact.id)}>delete</button>
+            </li>
           )
       }
-    </ul>
+    </ol>
 );
 }
 
