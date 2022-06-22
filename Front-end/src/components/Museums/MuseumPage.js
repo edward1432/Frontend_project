@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 import React from "react";
 import { PropTypes } from "@mui/material";
-=======
-import React, { useEffect } from "react";
->>>>>>> edwardd
 import { useParams } from "react-router-dom";
 import { getMuseum } from "./Axios/MuseumAPI";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 function MuseumPage () {
 
@@ -27,8 +23,6 @@ function MuseumPage () {
         <div className = "museum-page">
             <h1>{museum.name}</h1>
         </div>
-<<<<<<< HEAD
-=======
         <div>
             <ol>
                 {exhibits.map(exhibit => 
@@ -37,7 +31,6 @@ function MuseumPage () {
                     </li>)}
             </ol>
         </div>
->>>>>>> edwardd
         </>
     )
 }

@@ -24,7 +24,6 @@ export function getExhibitById (setExhibit, id) {
 //     }).catch((err) => console.log(err));
 // }
 
-<<<<<<< HEAD
 export function updateExhibit (setExhibit, exhibit) {
     axios.put(`http://127.0.0.1:8080/exhibit/update/${id}?&name=${exhibit.name}`)
   .then(res =>{
@@ -41,13 +40,3 @@ export function deleteExhibit (setExhibit, id) {
     getAllExhibits(setExhibit);
   }).catch((err) => console.log(err));
 }
-=======
-// export function updateExhibit (setExhibit, exhibit) {
-//     axios.put(`http://127.0.0.1:8080/exhibit/update/${id}?&name=${exhibit.name}`)
-//   .then(res =>{
-//     console.log(res);
-//     getAllExhibits(setExhibit);
-//   }).catch((err) => console.log(err));
-// }
-
->>>>>>> edwardd
