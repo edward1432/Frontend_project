@@ -34,26 +34,31 @@ function Header () {
           <Link to="/">Home</Link>
           </div>
         </div>
+          <div class = "Column">
+        <div className = "Museum-Landing-Page">
+          <Link to = "/museumslanding">Museums</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Exhibit-Landing-Page">
+          <Link to = "/exhibitslanding">Exhibits</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Artefact-Landing-Page">
+          <Link to = "/artefactslanding">Artefacts</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Staff-Landing-Page">
+          <Link to = "/stafflanding">Staff</Link>
+          </div>
+        </div>
         <div class = "Column">
         <div className = "Help">
           <Link to = "/help">Help!</Link>
           </div>
           </div>
-          <div class = "Column">
-        <div className = "Museum-Landing-Page">
-          <Link to = "/museumslanding">MLanding</Link>
-          </div>
-        </div>
-        <div class = "Column">
-        <div className = "Exhibit-Landing-Page">
-          <Link to = "/exhibitslanding">ELanding</Link>
-          </div>
-        </div>
-        <div class = "Column">
-        <div className = "Artefact-Landing-Page">
-          <Link to = "/artefactslanding">ALanding</Link>
-          </div>
-        </div>
         </div>
       </div>
       </div>
