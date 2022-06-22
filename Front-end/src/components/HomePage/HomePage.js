@@ -18,11 +18,6 @@ function HomePage() {
     <button class="museum-button">Museums</button>
     </a>
 </div>
-<div class = "museum-button-container">
-    <a href = "museumpage/1">
-    <button class="museum-button">Museums</button>
-    </a>
-</div>
 
 </div>
 
