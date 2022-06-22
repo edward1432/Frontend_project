@@ -25,7 +25,7 @@ export function getExhibitById (setExhibit, id) {
 // }
 
 export function updateExhibit (setExhibit, exhibit) {
-    axios.put(`http://127.0.0.1:8080/exhibit/update/${id}?&name=${exhibit.name}`)
+    axios.put(`http://127.0.0.1:8080/exhibit/update/${exhibit.id}?&name=${exhibit.name}`)
   .then(res =>{
     console.log(res);
     getAllExhibits(setExhibit);

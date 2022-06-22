@@ -41,7 +41,7 @@ function Header () {
         </div>
         <div class = "Column">
         <div className = "Exhibit-Landing-Page">
-          <Link to = "/exhibitslanding">Exhibits</Link>
+          <Link to = "/exhibitlanding">Exhibits</Link>
           </div>
         </div>
         <div class = "Column">
