@@ -1,4 +1,6 @@
+.HomePage {}
 
-.button{
-    background-color: aqua;
+.MuseumLandingPage{
+    margin: 'auto';
+    align-items: center;
 }
