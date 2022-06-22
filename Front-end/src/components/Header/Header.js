@@ -29,17 +29,36 @@ function Header () {
       <div className='leftSide' id={openLinks ? "open" : "close"}>
         <div class = "leftBar">
           <div class = "Row">
-            
             <div class = "Column">
         <div className='Home'>
           <Link to="/">Home</Link>
           </div>
         </div>
-        <div class = "Column">
-        <div className = "Help">
-          <Link to = "/">Help!</Link>
+          <div class = "Column">
+        <div className = "Museum-Landing-Page">
+          <Link to = "/museumslanding">Museums</Link>
           </div>
         </div>
+        <div class = "Column">
+        <div className = "Exhibit-Landing-Page">
+          <Link to = "/exhibitslanding">Exhibits</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Artefact-Landing-Page">
+          <Link to = "/artefactslanding">Artefacts</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Staff-Landing-Page">
+          <Link to = "/stafflanding">Staff</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Help">
+          <Link to = "/help">Help!</Link>
+          </div>
+          </div>
         </div>
       </div>
       </div>
