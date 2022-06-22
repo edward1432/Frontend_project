@@ -39,3 +39,12 @@ export function updateArtefact (setArtefact, artefact) {
   getAllArtefacts(setArtefact);
 }).catch((err) => console.log(err));
 }
+
+export function deleteArtefact (setArtefact, id) {
+  axios.delete(`http://127.0.0.1:8080/artefact/delete/${id}`)
+.then(res =>{
+  console.log(res);
+  alert(`Artefact deleted`);
+  getAllArtefacts(setArtefact);
+}).catch((err) => console.log(err));
+}
