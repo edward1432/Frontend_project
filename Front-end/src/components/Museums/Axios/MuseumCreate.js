@@ -6,7 +6,7 @@ import {useState, useEffect} from 'react';
 const MuseumCreate = () => {
 
   const [name, setName] = useState('');
-  const [country, setCountry] = useState('');
+  const [country, setCountry] = useState('Afghanistan');
 
   const handleNameChange = event => setName(event.target.value);
   const handleSelect = event =>
