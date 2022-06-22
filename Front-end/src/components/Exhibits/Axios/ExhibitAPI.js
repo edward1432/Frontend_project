@@ -16,14 +16,15 @@ export function getExhibitById (setExhibit, id) {
   }).catch((err) => console.log(err));
 }
 
-export function createExhibit (setExhibits, exhibit) {
-    axios.post(`http://127.0.0.1:8080/exhibit/create?name=${exhibit.name}&museum_id=${museum_id}`)
-    .then(res =>{
-      console.log(res);
-      getAllExhibits(setExhibits);
-    }).catch((err) => console.log(err));
-}
+// export function createExhibit (setExhibits, exhibit) {
+//     axios.post(`http://127.0.0.1:8080/exhibit/create?name=${exhibit.name}&museum_id=${museum_id}`)
+//     .then(res =>{
+//       console.log(res);
+//       getAllExhibits(setExhibits);
+//     }).catch((err) => console.log(err));
+// }
 
+<<<<<<< HEAD
 export function updateExhibit (setExhibit, exhibit) {
     axios.put(`http://127.0.0.1:8080/exhibit/update/${id}?&name=${exhibit.name}`)
   .then(res =>{
@@ -40,3 +41,13 @@ export function deleteExhibit (setExhibit, id) {
     getAllExhibits(setExhibit);
   }).catch((err) => console.log(err));
 }
+=======
+// export function updateExhibit (setExhibit, exhibit) {
+//     axios.put(`http://127.0.0.1:8080/exhibit/update/${id}?&name=${exhibit.name}`)
+//   .then(res =>{
+//     console.log(res);
+//     getAllExhibits(setExhibit);
+//   }).catch((err) => console.log(err));
+// }
+
+>>>>>>> edwardd

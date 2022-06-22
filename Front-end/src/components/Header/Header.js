@@ -58,7 +58,7 @@ function Header () {
           <button type="submit"><i class="fa fa-search"></i></button>
         </div>
 
-        <button className="dark-mode-button" onClick={darkModebutton}>{isClicked ? "Dark" : "Light"}</button>
+        <button className="dark-mode-button" onClick={darkModebutton}>{isClicked ? "Light" : "Dark"}</button>
 
       
       </div>
