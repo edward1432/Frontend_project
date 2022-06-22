@@ -23,3 +23,11 @@ export function getArtefactByCountry (setArtefact, country) {
     getArtefactByCountry(setArtefact);
   }).catch((err) => console.log(err));
 }
+
+export function createArtefact (setArtefacts, artefact) {
+  axios.post(`http://127.0.0.1:8080/exhibit/create?name=${artefact.name}&creator=${artefact.creator}&date=${artefact.date}&country=${artefact.country}&exhibitId=${exhibit.id}`)
+  .then(res =>{
+    console.log(res);
+    getAllArtefacts(setArtefacts);
+  }).catch((err) => console.log(err));
+}
