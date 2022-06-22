@@ -1,20 +1,20 @@
 import React from 'react';
 import './MuseumLandingPage.css';
-import Museum from '../Museums/Museum';
 import MuseumCreate from '../Museums/Axios/MuseumCreate';
 import MuseumDeleteById from '../Museums/Axios/MuseumDeleteById';
 import MuseumGetById from '../Museums/Axios/MuseumGetById';
-// import MuseumsList from '../Museums/MuseumTable/MuseumTable';
+
+import MuseumList from '../Museums/MuseumList';
+
 function MuseumLandingPage () {
     
   return(
     <>
       <div className="MuseumLandingPage">
+        <MuseumList />
         <Museum />
-        {/* <MuseumsList /> */}
         <MuseumGetById />
         <MuseumCreate />
-        <MuseumDeleteById />
       </div>
     </>
   )

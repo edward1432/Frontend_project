@@ -1,11 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import axios from 'axios';
 import {useState, useEffect} from 'react';
+import { createMuseum, getMuseums} from './MuseumAPI';
 
 const MuseumCreate = () => {
 
   const [name, setName] = useState('');
+
+  const [country, setCountry] = useState('');
+  const [museums, setMuseums] = useState([])
+
   const [country, setCountry] = useState('Afghanistan');
 
   const handleNameChange = event => setName(event.target.value);
@@ -14,14 +16,20 @@ const MuseumCreate = () => {
   
   // const handleCountryChange = event => setCountry(event.target.value);
 
+  useEffect(() => {
+    getMuseums(setMuseums)
+  })
+
   const handleSubmit = event => {
     event.preventDefault();
-
-
+  
   const museum = {
     "name": name,
     "country": country
   }
+
+  createMuseum(setMuseums, museum);
+
 // ?name=${name}&country=${country}
   // null, { params: museum}
   axios.post(`http://127.0.0.1:8080/museum/create?name=${name}&country=${country}`)
