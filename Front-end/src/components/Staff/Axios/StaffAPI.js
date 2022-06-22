@@ -16,11 +16,11 @@ export function getStaffById (setStaff, id) {
   }).catch((err) => console.log(err));
 }
 
-export function createExhibit (setExhibits, exhibit) {
-    axios.post(`http://127.0.0.1:8080/exhibit/create?name=${exhibit.name}&museum_id=${museum_id}`)
+export function hireStaff (setStaff, staff) {
+    axios.post(`http://127.0.0.1:8080/staff/hire?firstName=${staff.firstName}&lastName=${staff.lastName}&age=${staff.age}&address=${staff.address}&salary=${staff.salary}`)
     .then(res =>{
       console.log(res);
-      getAllExhibits(setExhibits);
+      getAllStaff(setStaff);
     }).catch((err) => console.log(err));
 }
 
