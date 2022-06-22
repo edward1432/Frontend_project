@@ -19,7 +19,6 @@ function App() {
       
       <Router>
         <Header />
-        
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/museumslanding' element={<MuseumLandingPage />}/>
