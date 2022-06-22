@@ -1,6 +1,6 @@
 .navBar {
     display: grid;
-    grid-template-columns: 10% 70% 20%;
+    grid-template-columns: 25% 55% 20%;
     align-items: center;
     height: 100px;
     padding-left: 1%;

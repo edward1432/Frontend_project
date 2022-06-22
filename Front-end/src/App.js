@@ -8,6 +8,7 @@ import ArtefactsLandingPage from './components/ArtefactsLandingPage/ArtefactsLan
 import ExhibitLandingPage from './components/ExhibitLandingPage/ExhibitLandingPage';
 import StaffLandingPage from './components/StaffLandingPage/StaffLandingPage';
 import MuseumPage from './components/Museums/MuseumPage';
+import HelpLandingPage from './components/Help/Help';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
           <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
           <Route path='/stafflanding' element={<StaffLandingPage />}/>
+          <Route path='/help' element={<HelpLandingPage />}/>
         </Routes>
       </Router>
     </div>

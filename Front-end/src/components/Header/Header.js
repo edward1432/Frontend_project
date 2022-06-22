@@ -29,7 +29,6 @@ function Header () {
       <div className='leftSide' id={openLinks ? "open" : "close"}>
         <div class = "leftBar">
           <div class = "Row">
-            
             <div class = "Column">
         <div className='Home'>
           <Link to="/">Home</Link>
@@ -37,7 +36,22 @@ function Header () {
         </div>
         <div class = "Column">
         <div className = "Help">
-          <Link to = "/">Help!</Link>
+          <Link to = "/help">Help!</Link>
+          </div>
+          </div>
+          <div class = "Column">
+        <div className = "Museum-Landing-Page">
+          <Link to = "/museumslanding">MLanding</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Exhibit-Landing-Page">
+          <Link to = "/exhibitslanding">ELanding</Link>
+          </div>
+        </div>
+        <div class = "Column">
+        <div className = "Artefact-Landing-Page">
+          <Link to = "/artefactslanding">ALanding</Link>
           </div>
         </div>
         </div>
