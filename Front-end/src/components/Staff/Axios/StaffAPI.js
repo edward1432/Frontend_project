@@ -33,11 +33,11 @@ export function updateStaff (setStaff, staff) {
   }).catch((err) => console.log(err));
 }
 
-export function deleteExhibit (setExhibit, id) {
-    axios.delete(`http://127.0.0.1:8080/exhibit/delete/${id}`)
+export function fireStaff (setStaff, id) {
+    axios.delete(`http://127.0.0.1:8080/staff/fire/${id}`)
   .then(res =>{
     console.log(res);
-    alert(`Exhibit deleted`);
-    getAllExhibits(setExhibits);
+    alert(`Staff fired`);
+    getAllStaff(setStaff);
   }).catch((err) => console.log(err));
 }
