@@ -1,17 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './ArtefactsLandingPage.css';
 import Artefacts from '../Artefacts/Artefacts';
 import GetAllArtefacts from '../Artefacts/Axios/GetAllArtefacts';
+import GetArtefactByExhibitId from '../Artefacts/Axios/GetArtefactsByExhibitId';
 
 function ArtefactsLandingPage () {
     
   return(
     <>
-      <div className="ArtefactsLangingPage">
+      <div className="ArtefactsLandingPage">
         <Artefacts />
-        <GetAllArtefacts />
-
       </div>
     </>
   )
