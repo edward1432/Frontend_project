@@ -37,6 +37,6 @@ export function deleteExhibit (setExhibit, id) {
   .then(res =>{
     console.log(res);
     alert(`Exhibit deleted`);
-    getAllExhibits(setExhibits);
+    getAllExhibits(setExhibit);
   }).catch((err) => console.log(err));
 }
