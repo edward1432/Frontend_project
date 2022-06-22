@@ -14,16 +14,19 @@ const MuseumGetById = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
+    function goToMuseum(museum) {
+      navigate("/museumpage/" + museum.id);   
+    }
+
+    function notFound(err) {
+        alert("can't find museum " + err)
+    }
+
     const museum = {
       "id": id
     }
-    try {
-      getMuseum(id);
-      navigate("/museumpage/" + museum.id);
-    } catch (err) {
-      alert(err)
-    }
 
+    getMuseum(id, goToMuseum, notFound);
 }
 
   return (

@@ -10,11 +10,16 @@ function MuseumPage () {
     const [museum, setMuseum] = useState({});
     const [exhibits, setExhibits] = useState([]);
 
+    function onError(err) {
+        alert('oh dear ' + err)
+    }
+
     if (!museum.id){
-    getMuseum(setMuseum, params.id);
+    getMuseum(params.id, setMuseum, onError);
     }
 
     useEffect(() => {
+  //      getMuseum(params.id, setMuseum, onError);
         setExhibits(museum.exhibits);
     })
 

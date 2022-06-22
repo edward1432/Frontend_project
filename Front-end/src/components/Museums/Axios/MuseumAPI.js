@@ -7,11 +7,22 @@ export function getMuseums(setMuseums) {
   }).catch((err) => console.log(err));
 }
 
-export function getMuseum(setMuseum, id) {
-  axios.get('http://127.0.0.1:8080/museum/' + id).then(res => {
+// export function getMuseum(setMuseum, id) {
+//   axios.get('http://127.0.0.1:8080/museum/' + id).then(res => {
+//     const museum = res.data;
+//     setMuseum(museum);
+//   });
+// }
+
+export function getMuseum(id, setMuseum, notFound) {
+  axios.get('http://127.0.0.1:8080/museum/' + id)
+  .then(res => {
     const museum = res.data;
-    setMuseum(museum);
-  });
+    console.log("museum ", museum )
+    if (museum.id) setMuseum(museum);
+    else notFound('cant find ' + id)
+
+  }).catch((err) => console.log(err));
 }
 
 export function deleteMuseum(setMuseums, id) {
