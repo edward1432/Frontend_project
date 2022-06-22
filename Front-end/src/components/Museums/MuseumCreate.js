@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import { createMuseum, getMuseums} from './MuseumAPI';
+import { createMuseum, getMuseums} from './Axios/MuseumAPI';
 
 const MuseumCreate = () => {
 

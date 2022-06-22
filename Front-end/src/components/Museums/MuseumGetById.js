@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import {useState, useEffect} from 'react';
+import { getMuseum } from './Axios/MuseumAPI';
+import { useNavigate } from 'react-router-dom';
 
-const MuseumDeleteById = () => {
+const MuseumGetById = () => {
 
-    const [id, setId] = useState(0);
-
+  const [id, setId] = useState(0);
   const handleIdChange = event => setId(event.target.value);
+  const navigate = useNavigate();
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -15,12 +17,13 @@ const MuseumDeleteById = () => {
     const museum = {
       "id": id
     }
+    try {
+      getMuseum(id);
+      navigate("/museumpage/" + museum.id);
+    } catch (err) {
+      alert(err)
+    }
 
-
-  axios.delete(`http://127.0.0.1:8080/museum/delete/${museum.id}`)
-  .then(res =>{
-    console.log(res);
-  }).catch((err) => console.log(err));
 }
 
   return (
@@ -30,7 +33,7 @@ const MuseumDeleteById = () => {
           Museum Id:
           <input type = "text" name = "id" onChange = {handleIdChange} />
         </label><br></br>
-        <button type = "submit" id="button">Delete a museum</button>
+        <button type = "submit" id="button">Get a museum</button>
       </form>
     </div>
   )
@@ -38,4 +41,4 @@ const MuseumDeleteById = () => {
 
 
   
-  export default MuseumDeleteById;
+  export default MuseumGetById;
