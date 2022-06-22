@@ -10,6 +10,7 @@ import MuseumPage from './components/Museums/MuseumPage';
 import HelpLandingPage from './components/Help/Help';
 import ExhibitLandingPage from './components/Exhibits/ExhibitLandingPage/ExhibitLandingPage';
 import ExhibitPage from './components/Exhibits/ExhibitPage';
+import StaffPage from './components/Staff/StaffPage';
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
           <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
           <Route path='/exhibitpage/:id' element={<ExhibitPage />}/>
           <Route path='/stafflanding' element={<StaffLandingPage />}/>
-          {/* <Route path='/museumpage/:id' element={<MuseumPage />}/> */}
+          <Route path='/staffpage/:id' element={<StaffPage />}/>
           <Route path='/help' element={<HelpLandingPage />}/>
         </Routes>
       </Router>
