@@ -1,8 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 export function getMuseums(setMuseums) {
   axios.get('http://127.0.0.1:8080/museum').then(res => {
@@ -23,5 +19,13 @@ export function deleteMuseum(setMuseums, id) {
   .then(res => {
     alert(`Museum deleted`);
     getMuseums(setMuseums);
+  }).catch((err) => console.log(err));
+}
+
+export function createMuseum(setMuseums, museum) {
+  axios.post('http://127.0.0.1:8080/museum/create', null, { params: museum})
+  .then(res => {
+    console.log(res)
+    getMuseums(setMuseums)
   }).catch((err) => console.log(err));
 }
