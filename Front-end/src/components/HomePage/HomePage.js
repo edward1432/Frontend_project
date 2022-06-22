@@ -31,8 +31,10 @@ function HomePage() {
     <img class="exhibit-picture" src="https://libraries.mit.edu/exhibits/files/cropped-gallery-web.jpg"></img>
 </div>
 
-<div>
+<div class = "exhibit-button-container">
+    <a href='http://localhost:3000/exhibitlanding'>
     <button class="exhibit-button">Exhibits</button>
+    </a>
 </div>
 </div>
 {/* Column */}
