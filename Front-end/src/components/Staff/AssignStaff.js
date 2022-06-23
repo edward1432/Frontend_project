@@ -15,7 +15,6 @@ const AssignStaff = ({staID}) => {
     
     return (
         
-        
         <form onSubmit = {handleSubmit}>
             <div class = "update-museum-form">
                 <label>
