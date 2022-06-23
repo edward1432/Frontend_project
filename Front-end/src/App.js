@@ -14,8 +14,7 @@ import StaffPage from './components/Staff/StaffPage';
 import ArtefactPage from './components/Artefacts/ArtefactPage';
 
 function App() {
-
-
+  
   return (
     <div>
       
