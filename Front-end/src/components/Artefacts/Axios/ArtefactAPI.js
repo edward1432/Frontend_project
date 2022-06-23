@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 export function getAllArtefacts (setArtefacts) {
     axios.get('http://127.0.0.1:8080/artefact')
@@ -31,13 +32,13 @@ export function createArtefact (setArtefacts, artefact) {
   }).catch((err) => console.log(err));
 }
 
-// export function updateArtefact (setArtefact, artefact) {
-//   axios.put(`http://127.0.0.1:8080/artefact/update/${id}?&name=${artefact.name}&creator=${artefact.creator}&date=${artefact.date}&country=${artefact.country}`)
-// .then(res =>{
-//   console.log(res);
-//   getAllArtefacts(setArtefact);
-// }).catch((err) => console.log(err));
-// }
+export function updateArtefact (setArtefact, artefact, name, creator, date, country, id) {
+  axios.put(`http://127.0.0.1:8080/artefact/update/${artefact.id}`, null, {params: name, creator, date, country, id})
+.then(res =>{
+  console.log(res);
+  getAllArtefacts(setArtefact);
+}).catch((err) => console.log(err));
+}
 
 export function deleteArtefact (setArtefact, id) {
   axios.delete(`http://127.0.0.1:8080/artefact/delete/${id}`)
