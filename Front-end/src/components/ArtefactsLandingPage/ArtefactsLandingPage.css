@@ -8,6 +8,8 @@
 }
 
 .artefact-gif{
-  margin-left: 20px;
-  display: inline-block;
+  margin-block: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
