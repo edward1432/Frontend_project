@@ -4,3 +4,10 @@
     margin: 'auto';
     align-items: center;
 }
+
+.name{
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
