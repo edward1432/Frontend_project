@@ -40,3 +40,12 @@ export function createMuseum(setMuseums, museum) {
     getMuseums(setMuseums)
   }).catch((err) => console.log(err));
 }
+
+export function addExhibit(musID, exhibID, setMuseums){
+  axios.put(`http://127.0.0.1:8080/museum/${musID}/exhibit/${exhibID}`)
+  .then(res =>{
+    console.log(res);
+    getMuseums(setMuseums);
+  }).catch((err) => console.log(err));
+}
+
