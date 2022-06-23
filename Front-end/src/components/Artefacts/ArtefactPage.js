@@ -2,20 +2,19 @@ import React from "react";
 import { PropTypes } from "@mui/material";
 import { useParams } from "react-router-dom";
 import {useState, useEffect} from "react";
-import { GetArtefactByExhibitId} from "./Axios/ArtefactAPI";
+import { getAllArtefacts } from "./Axios/ArtefactAPI";
+
 function ArtefactPage () {
 
     const params = useParams();
     const [artefact, setArtefact] = useState({});
-    const [staff, setStaff] = useState([]);
-
-    if (!artefact.id){
-        GetArtefactByExhibitId(setArtefact, params.id);
-    }
+    const [artefacts, setArtefacts] = useState([]);
 
     useEffect(() => {
-        setStaff(artefact.staff);
+        getAllArtefacts(setArtefacts);
+        // setArtefact(artefacts.filter(artefact => artefact.id === params.id))
     })
+
 
     return(
         <>
@@ -23,17 +22,9 @@ function ArtefactPage () {
             <h1>{artefact.name}</h1>
         </div>
         <div>
-            <ol>
-                {staff && staff.map(staff => 
-                    <li key={staff.id}>
-                        {staff.name}
-                        {staff.lastName}
-                        {staff.dob}
-                        {staff.address}
-                        {staff.salary}
-                        {staff.exhibitIds}
-                    </li>)}
-            </ol>
+            <p>Creator: {artefact.creator}</p>
+            <p>Date: {artefact.date}</p>
+            <p>Country: {artefact.country}</p>
         </div>
         </>
     )
