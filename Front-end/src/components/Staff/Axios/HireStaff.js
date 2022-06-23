@@ -9,13 +9,13 @@ const HireStaff = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
-    const [dob, setDob] = useState('');
+    const [age, setAge] = useState('');
     const [address, setAddress] = useState('');
     const [salary, setSalary] = useState('');
 
     const handleFirstNameChange = event => setFirstName(event.target.value);
     const handleLastNameChange = event => setLastName(event.target.value);
-    const handleDobChange = event => setDob(event.target.value);
+    const handleAgeChange = event => setAge(event.target.value);
     const handleAddressChange = event => setAddress(event.target.value);
     const handleSalaryChange = event => setSalary(event.target.value);
 
@@ -25,12 +25,12 @@ const HireStaff = () => {
     const staff = {
         "firstName": firstName,
         "lastName": lastName,
-        "dob": dob,
+        "age": age,
         "address": address,
         "salary": salary
     }
 
-    axios.post(`http://127.0.0.1:8080/staff/hire?firstName=${staff.firstName}&lastName=${staff.lastName}&age=${staff.dob}&address=${staff.address}&salary=${staff.salary}`)
+    axios.post(`http://127.0.0.1:8080/staff/hire?firstName=${staff.firstName}&lastName=${staff.lastName}&age=${staff.age}&address=${staff.address}&salary=${staff.salary}`)
     .then(res =>{
       console.log(res);
 }).catch((err) => console.log(err));
@@ -50,8 +50,8 @@ return (
         </label>
 
         <label>
-            Date of Birth:
-            <input type="text" name='name' onChange={handleDobChange} />
+            Age:
+            <input type="text" name='name' onChange={handleAgeChange} />
         </label>
 
         <label>
