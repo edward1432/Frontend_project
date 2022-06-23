@@ -25,33 +25,28 @@ function Header () {
 
   return (
     <div className='navBar'>
+      <div class="topnav" id="myTopnav">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <div className='leftSide' id={openLinks ? "open" : "close"}>
         <div class = "leftBar">
           <div class = "Row">
-            <div class = "Column">
+           
+
+        <div class="dropdown">
+    <button class="drop-button">
+      <i class="fa fa-navicon"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/museumslanding">Museums</a>
+      <a href="/exhibitlanding">Exhibits</a>
+      <a href="/artefactslanding">Artefacts</a>
+      <a href="/stafflanding">Staff</a>
+    </div>
+  </div>
+  </div>
+  <div class = "Column">
         <div className='Home'>
           <Link to="/">Home</Link>
-          </div>
-        </div>
-          <div class = "Column">
-        <div className = "Museum-Landing-Page">
-          <Link to = "/museumslanding">Museums</Link>
-          </div>
-        </div>
-        <div class = "Column">
-        <div className = "Exhibit-Landing-Page">
-          <Link to = "/exhibitlanding">Exhibits</Link>
-          </div>
-        </div>
-        <div class = "Column">
-        <div className = "Artefact-Landing-Page">
-          <Link to = "/artefactslanding">Artefacts</Link>
-          </div>
-        </div>
-        <div class = "Column">
-        <div className = "Staff-Landing-Page">
-          <Link to = "/stafflanding">Staff</Link>
           </div>
         </div>
         <div class = "Column">

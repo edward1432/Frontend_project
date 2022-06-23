@@ -1,6 +1,45 @@
-.HomePage {}
+
 
 .MuseumLandingPage{
     margin: 'auto';
     align-items: center;
+}
+.name{
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.museum-form {
+    width: 500px;
+}
+
+.get-museum, .add-museum-button{
+  margin-left: 20px;
+  height: 25px;
+  width: 150px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.museum-id{
+   display: inline-block;
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+
+
+.museum-name {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.add-museum-button{
+    display: inline-block;
+    margin-left: 20px;
 }

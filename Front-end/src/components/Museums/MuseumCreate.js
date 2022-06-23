@@ -28,12 +28,15 @@ const MuseumCreate = () => {
 }
 
   return (
-    <div>
+    <div class='create-museum-form'>
       <form onSubmit = {handleSubmit}>
+        <div class='museum-name'>
         <label>
           Museum Name:
           <input type = "text" name = "name" onChange = {handleNameChange} />
         </label><br></br>
+        </div>
+       
         
 <select name = "country" onChange = {handleSelect}>
 <option value="Afghanistan">Afghanistan</option>
@@ -232,7 +235,7 @@ const MuseumCreate = () => {
 <option value="Zambia">Zambia</option>
 <option value="Zimbabwe">Zimbabwe</option>
 </select>
-        <button type = "submit" id="button">Add a new museum</button><br></br>
+        <button class='add-museum-button' type = "submit" id="button">Add a new museum</button><br></br>
         <br></br>
       </form>
     </div>
