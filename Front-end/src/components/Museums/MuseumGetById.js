@@ -30,13 +30,15 @@ const MuseumGetById = () => {
 }
 
   return (
-    <div>
-      <form onSubmit = {handleSubmit}>
-        <label>
+    <div class ='museum-form'>
+    
+     <form onSubmit = {handleSubmit}>
+       <div class='museum-id'>
+       <label>
           Museum Id:
           <input type = "text" name = "id" onChange = {handleIdChange} />
-        </label><br></br>
-        <button type = "submit" id="button">Get a museum</button>
+        </label><br></br></div> 
+        <button class ='get-museum' type = "submit" id="button">Get a museum</button>
       </form>
     </div>
   )
