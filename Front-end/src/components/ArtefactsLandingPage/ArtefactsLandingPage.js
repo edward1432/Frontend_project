@@ -7,7 +7,7 @@ function ArtefactsLandingPage () {
   return(
     <>
       <div className="ArtefactsLandingPage">
-        <h1>Artefacts</h1>
+        <h1 class = "name">Artefacts</h1>
         <ArtefactsTable />
       </div>
     </>
