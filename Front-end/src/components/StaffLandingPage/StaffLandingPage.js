@@ -1,15 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './StaffLandingPage.css';
+import StaffList from '../Staff/StaffList';
+import HireStaff from '../Staff/Axios/HireStaff';
+function StaffLandingPage () {
+  return (
+    <>
+      <div className = "StaffLandingPage">
+        <StaffList />
+        <HireStaff />
 
-const StaffLandingPage = () => (
-  <div className="StaffLandingPage">
-    StaffLandingPage Component
-  </div>
-);
 
-StaffLandingPage.propTypes = {};
-
-StaffLandingPage.defaultProps = {};
+      </div>
+    
+    </>
+  )
+}
 
 export default StaffLandingPage;
