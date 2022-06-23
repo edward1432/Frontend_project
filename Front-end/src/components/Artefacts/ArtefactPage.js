@@ -2,24 +2,20 @@ import React from "react";
 import { PropTypes } from "@mui/material";
 import { useParams } from "react-router-dom";
 import {useState, useEffect} from "react";
-import { getAllArtefacts, updateArtefact } from "./Axios/ArtefactAPI";
+import { getArtefactByID, updateArtefact } from "./Axios/ArtefactAPI";
 
 function ArtefactPage () {
 
     const params = useParams();
     const [artefact, setArtefact] = useState({});
-    const [artefacts, setArtefacts] = useState([]);
 
     useEffect(() => {
-        getAllArtefacts(setArtefacts);
-        // setArtefact(artefacts.filter(artefact => artefact.id === params.id))
-    })
+        getArtefactByID(setArtefact, params.id)
+    }, [])
 
     const [country, setCountry] = useState('Afghanistan');
-
     const [artefactName, setArtefactName] = useState('');
     const [creator, setCreator] = useState('');
-
     const [date, setDate] = useState('');
 
     const handleNameChange = event => setArtefactName(event.target.value);
@@ -31,8 +27,7 @@ function ArtefactPage () {
 
     const handleSubmit = event => {
         event.preventDefault();
-
-        updateArtefact(setArtefact, artefactName, creator, date, country, 1);
+        updateArtefact(setArtefact, artefactName, creator, date, country, params.id);
     }
 
 

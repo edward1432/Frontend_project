@@ -1,23 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import {useState, useEffect} from "react";
-import { getStaffByID3 } from '../Staff/Axios/StaffAPI';
+import { getStaffByIDEnriched } from '../Staff/Axios/StaffAPI';
 import AssignStaff from "./AssignStaff";
 
 function StaffPage () {
 
     const params = useParams();
     const [staff, setStaff] = useState({exhibits: []});
-    const [exhibits, setExhibits] = useState([])
 
-    if (!staff.id){
-        getStaffByID3(setStaff, params.id);
-    }
-
-    // useEffect(() => {
-    //     preventdefault()
-    //     getStaffByID2(setStaff, params.id);
-    // })
+    useEffect(() => {
+        getStaffByIDEnriched(setStaff, params.id);
+    }, []);
 
     return(
         <>

@@ -16,6 +16,14 @@ export function getArtefactByExhibitId (setArtefact, id) {
   });
 }
 
+export function getArtefactByID (setArtefact, id){
+  axios.get('http://127.0.0.1:8080/artefact')
+  .then(res => {
+    const matchingArtefacts = res.data.filter(artefact => artefact.id == id)
+    setArtefact(matchingArtefacts[0])
+  }).catch((err) => console.log(err));
+}
+
 export function getArtefactByCountry (setArtefact, country) {
   axios.get(`http://127.0.0.1:8080/artefact//${country}`)
   .then(res =>{
@@ -32,11 +40,12 @@ export function createArtefact (setArtefacts, artefact) {
   }).catch((err) => console.log(err));
 }
 
-export function updateArtefact (setArtefact, artefact, name, creator, date, country, id) {
-  axios.put(`http://127.0.0.1:8080/artefact/update/${artefact.id}`, null, {params: name, creator, date, country, id})
+export function updateArtefact (setArtefact, name, creator, date, country, id) {
+  axios.put(`http://127.0.0.1:8080/artefact/update/${id}`, null, {params: {name:name, creator:creator, date:date, country:country, id:id}})
 .then(res =>{
   console.log(res);
-  getAllArtefacts(setArtefact);
+  getArtefactByID(setArtefact, id);
+  //getAllArtefacts(setArtefact);
 }).catch((err) => console.log(err));
 }
 
