@@ -3,7 +3,7 @@ import './MuseumLandingPage.css';
 import MuseumCreate from '../MuseumCreate';
 import MuseumGetById from '../MuseumGetById';
 import MuseumTable from '../MuseumTable';
-// import Assets from './src/Assets';
+// import Assets from './Assets';
 
 function MuseumLandingPage () {
     
@@ -15,7 +15,7 @@ function MuseumLandingPage () {
         <MuseumGetById />
         <MuseumCreate />
         {/* <audio autoPlay>
-          <source src='museums.mp3' type='audio/mp3' />
+          <source src='museums.mp3' type='audio/mpeg' />
         </audio> */}
       </div>
     </>
