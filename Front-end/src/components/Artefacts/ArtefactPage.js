@@ -26,6 +26,8 @@ function ArtefactPage () {
             <p>Date: {artefact.date}</p>
             <p>Country: {artefact.country}</p>
         </div>
+        
+
         </>
     )
 
