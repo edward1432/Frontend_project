@@ -13,14 +13,14 @@
 }
 
 .SearchBar input {
-    width: 100px;
+    width: 150px;
     background-color: white; 
 }
 
 .SearchBar button {
     margin-right: 5px;
     margin-left: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .dark {
