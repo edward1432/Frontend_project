@@ -6,3 +6,25 @@
     justify-content: center;
     align-content: center;
 }
+
+.add-exhibit-button{
+    height: 25px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid black;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .exhibit-name{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+  }
+
+  .museum-id{
+      margin-left: 20px;
+  }
