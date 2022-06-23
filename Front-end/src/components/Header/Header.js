@@ -24,8 +24,8 @@ function Header () {
 
 
   return (
-    <div className='navBar'>
-      <div class="topnav" id="myTopnav">
+    <div className='topnav' id = "myTopnav">
+      <div class="123" id="123">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <div className='leftSide' id={openLinks ? "open" : "close"}>
         <div class = "leftBar">
@@ -61,7 +61,7 @@ function Header () {
 
       <div className='middle'>
         <div className='Title'>
-          <h1><u>Muse360</u></h1>
+          <h1><u>Museum Management Tool</u></h1>
         </div>
       </div>
 
@@ -70,9 +70,10 @@ function Header () {
         <div className='SearchBar'>
           <input type="text" placeholder="Search..."></input>
           <button type="submit"><i class="fa fa-search"></i></button>
+          <button className="dark-mode-button" onClick={darkModebutton}>{isClicked ? "Light" : "Dark"}</button>
         </div>
 
-        <button className="dark-mode-button" onClick={darkModebutton}>{isClicked ? "Light" : "Dark"}</button>
+        
 
       
       </div>
