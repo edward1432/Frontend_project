@@ -8,34 +8,27 @@ function StaffPage () {
 
     const params = useParams();
     const [staff, setStaff] = useState({});
-    const [exhibits, setExhibits] = useState([]);
 
     if (!staff.id){
         getStaffById(setStaff, params.id);
     }
 
-    useEffect(() => {
-        setExhibits(staff.exhibits);
-    })
+    // useEffect(() => {
+    //     setExhibits(staff.exhibits);
+    // })
 
     return(
         <>
+        <section>
         <div className = "staff-page">
-            <h1>{staff.firstName} {staff.lastName} </h1>
+            <h1>Employee: {staff.firstName} {staff.lastName} </h1>
         </div>
         <div>
-            <ol>
-                {staff.params && staff.params.map (staff => 
-                    <li key={staff.id}>
-                        {staff.firstName}
-                        {staff.lastName}
-                        {staff.dob}
-                        {staff.address}
-                        {staff.salary}
-                        {staff.exhibitIds}
-                    </li>)}
-            </ol>
+            <p>D.O.B: {staff.dob}</p>
+            <p>Address: {staff.address}</p>
+            <p>Salary: £{staff.salary}</p>
         </div>
+        </section>
         </>
     )
 

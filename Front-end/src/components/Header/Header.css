@@ -14,18 +14,16 @@
 
 .SearchBar input {
     width: 100px;
-    background-color: lightseagreen; 
+    background-color: white; 
 }
 
 .SearchBar button {
-    margin-right: 10px;
+    margin-right: 5px;
     margin-left: 5px;
 }
 
-
-
 .dark {
-    color: pink;
+    color: hotpink;
     background-color: #292929;     }
 
 
@@ -41,7 +39,6 @@
     overflow: hidden;
   }
   
-
   .topnav a {
     float: left;
     display: block;
