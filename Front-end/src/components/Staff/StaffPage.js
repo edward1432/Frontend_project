@@ -3,6 +3,7 @@ import { PropTypes } from "@mui/material";
 import { useParams } from "react-router-dom";
 import {useState, useEffect} from "react";
 import { getStaffById } from '../Staff/Axios/StaffAPI';
+import AssignStaff from "./AssignStaff";
 
 function StaffPage () {
 
@@ -24,11 +25,15 @@ function StaffPage () {
             <h1>Employee: {staff.firstName} {staff.lastName} </h1>
         </div>
         <div>
+            <p>ID: {staff.id}</p>
             <p>D.O.B: {staff.dob}</p>
             <p>Address: {staff.address}</p>
             <p>Salary: £{staff.salary}</p>
         </div>
+        <AssignStaff staID={staff.id}/>
         </section>
+
+        
         </>
     )
 
