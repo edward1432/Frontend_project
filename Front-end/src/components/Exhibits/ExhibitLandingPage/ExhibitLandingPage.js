@@ -10,6 +10,7 @@ function ExhibitLandingPage () {
       <div className="ExhibitLandingPage">
         <h1 class = "name">Exhibits</h1>
         <ExhibitTable />
+        <br></br>
         <CreateExhibit />
 
       </div>

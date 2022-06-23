@@ -37,34 +37,34 @@ const HireStaff = () => {
 }
 
 return (
-<div>
+<div class="hire-staff-form">
       <form onSubmit = {handleSubmit}>
         <label>
             First Name:
             <input type = "text" name = "name" onChange = {handleFirstNameChange} />
-        </label>
+        </label> <br></br> <br></br>
 
         <label>
             Last Name:
             <input type="text" name='name' onChange={handleLastNameChange} />
-        </label>
+        </label> <br></br> <br></br>
 
         <label>
             Age:
             <input type="text" name='name' onChange={handleAgeChange} />
-        </label>
+        </label> <br></br> <br></br>
 
         <label>
             Address:
             <input type="text" name='name' onChange={handleAddressChange} />
-        </label>
+        </label> <br></br> <br></br>
 
         <label>
             Salary:
             <input type="number" name='name' onChange={handleSalaryChange} />
-        </label>
+        </label> 
         
-        <button type = "submit" id="button">Hire new staff member</button><br></br>
+        <button type = "submit" id="button" class="hire-staff-button">Hire new staff member</button><br></br>
         <br></br>
       </form>
     </div>

@@ -1,1 +1,13 @@
 .Exhibits {}
+
+.add-exhibit-button{
+    height: 25px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid black;
+  }
+  
+
