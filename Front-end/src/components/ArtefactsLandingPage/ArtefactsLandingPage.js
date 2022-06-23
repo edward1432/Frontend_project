@@ -1,15 +1,14 @@
 import React from 'react';
 import './ArtefactsLandingPage.css';
-import Artefacts from '../Artefacts/Artefacts';
-import GetAllArtefacts from '../Artefacts/Axios/GetAllArtefacts';
-import GetArtefactByExhibitId from '../Artefacts/Axios/GetArtefactsByExhibitId';
+import ArtefactsTable from '../Artefacts/ArtefactsTable';
 
 function ArtefactsLandingPage () {
     
   return(
     <>
       <div className="ArtefactsLandingPage">
-        <Artefacts />
+        <h1>Artefacts</h1>
+        <ArtefactsTable />
       </div>
     </>
   )

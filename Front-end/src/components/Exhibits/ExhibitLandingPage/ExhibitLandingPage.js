@@ -1,15 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './ExhibitLandingPage.css';
-import Exhibits from '../Exhibits';
 import CreateExhibit from '../Axios/CreateExhibit';
+import ExhibitTable from '../ExhibitTable';
 
 function ExhibitLandingPage () {
     
   return(
     <>
       <div className="ExhibitLandingPage">
-        <Exhibits />
+        <h1>Exhibits</h1>
+        <ExhibitTable />
         <CreateExhibit />
 
       </div>

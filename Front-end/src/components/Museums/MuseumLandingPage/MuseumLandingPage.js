@@ -2,7 +2,6 @@ import React from 'react';
 import './MuseumLandingPage.css';
 import MuseumCreate from '../MuseumCreate';
 import MuseumGetById from '../MuseumGetById';
-import MuseumList from '../MuseumList';
 import MuseumTable from '../MuseumTable';
 function MuseumLandingPage () {
     
