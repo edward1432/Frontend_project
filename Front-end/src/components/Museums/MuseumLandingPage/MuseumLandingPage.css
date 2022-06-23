@@ -5,6 +5,7 @@
     align-items: center;
 }
 
+<<<<<<< HEAD
 .museum-form {
     width: 500px;
 }
@@ -37,4 +38,11 @@
 .add-museum-button{
     display: inline-block;
     margin-left: 20px;
+=======
+.name{
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+>>>>>>> b8282d7d67f4fabdd1ef299a809a2db663ac5d46
 }

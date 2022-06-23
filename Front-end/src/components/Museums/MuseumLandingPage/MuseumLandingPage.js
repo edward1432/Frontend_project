@@ -9,7 +9,7 @@ function MuseumLandingPage () {
   return(
     <>
       <div className="MuseumLandingPage">
-        <h1>Museums</h1>
+        <h1 class = "name">Museums</h1>
         <MuseumTable /><br></br>
         <MuseumGetById />
         <MuseumCreate />
