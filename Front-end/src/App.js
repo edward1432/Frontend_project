@@ -11,6 +11,7 @@ import HelpLandingPage from './components/Help/Help';
 import ExhibitLandingPage from './components/Exhibits/ExhibitLandingPage/ExhibitLandingPage';
 import ExhibitPage from './components/Exhibits/ExhibitPage';
 import StaffPage from './components/Staff/StaffPage';
+import ArtefactPage from './components/Artefacts/ArtefactPage';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
           <Route path='/museumslanding' element={<MuseumLandingPage />}/>
           <Route path='/museumpage/:id' element={<MuseumPage />}/>
           <Route path='/artefactslanding' element={<ArtefactsLandingPage />}/>
-          <Route path='/artefactpage/:id' element={<MuseumPage />}/>
+          <Route path='/artefactpage/:id' element={<ArtefactPage />}/>
           <Route path='/exhibitlanding' element={<ExhibitLandingPage />}/>
           <Route path='/exhibitpage/:id' element={<ExhibitPage />}/>
           <Route path='/stafflanding' element={<StaffLandingPage />}/>
