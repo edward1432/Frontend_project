@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { getMuseums, deleteMuseum } from "./Axios/MuseumAPI";
 import { useState } from 'react';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -10,13 +12,12 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { useNavigate } from 'react-router-dom';
 import { Chip } from '@mui/material';
-import { deleteExhibit, getAllExhibits } from './Axios/ExhibitAPI';
 
-const ExhibitTable = () => {
+const MuseumTable = () => {
 
   const columns = [
     { id: 'name', label: 'Name', minWidth: 170 },
-    { id: 'museum', label: 'Museum', minWidth: 100 },
+    { id: 'country', label: 'Country', minWidth: 100 },
     { id: 'deleteButton', minWidth: 100}
   ];
 
@@ -31,33 +32,32 @@ const ExhibitTable = () => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   }
-  const [exhibits, setExhibits] = useState([]);
+  const [museums, setMuseums] = useState([]);
   useEffect(() => {
-    getAllExhibits(setExhibits);
+    getMuseums(setMuseums);
   })
 
-  function deleteExhib(id){
-    deleteExhibit(setExhibits, id);
+  function deleteMus(id) {
+    deleteMuseum(setMuseums, id);
   }
 
   const navigate = useNavigate();
 
-  function goToExhib(id) {
-    navigate("/exhibitpage/" + id)
+  function goToMus(id) {
+    navigate("/museumpage/" + id)
   }
 
-  function createData(id, name, museum, deleteButton) {
-    return { id, name, museum, deleteButton};
+  function createData(id, name, country, deleteButton) {
+    return { id, name, country, deleteButton};
   }
 
-  const rows = exhibits.map(exhibit => createData(exhibit.id, exhibit.name, exhibit.museum.name,
-     <Chip label="Delete" variant="soft" onDelete={()=>deleteExhib(exhibit.id)} />
+  const rows = museums.map(museum => createData(museum.id, museum.name, museum.country,
+     <Chip label="Delete" variant="soft" onDelete={()=>deleteMus(museum.id)} />
      ))
 
   return (
     <>
-    <section>
-    <Paper sx={{ width: '100%', overflow: 'hidden'}}>
+    <Paper sx={{ width: '75%', overflow: 'hidden'}}>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -78,7 +78,7 @@ const ExhibitTable = () => {
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row) => {
                 return (
-                  <TableRow onClick={() => goToExhib(row['id'])} hover role="checkbox" tabIndex={-1} key={row.code}>
+                  <TableRow onClick={() => goToMus(row['id'])} hover role="checkbox" tabIndex={-1} key={row.code}>
                     {columns.map((column) => {
                       const value = row[column.id];
                       return (
@@ -105,11 +105,10 @@ const ExhibitTable = () => {
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
     </Paper>
-    </section>
     </>
   )
 
 }
 
 
-export default ExhibitTable;
+export default MuseumTable;
