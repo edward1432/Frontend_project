@@ -9,5 +9,5 @@
 
 .artefact-gif{
   margin-left: 20px;
-  display: inline-block;
+  border: solid black 2px;
 }

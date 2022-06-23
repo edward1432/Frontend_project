@@ -10,17 +10,23 @@
 .SearchBar {
   float: right;
     display: flex;
+    
 }
 
 .SearchBar input {
     width: 150px;
+    height: 20px;
     background-color: white; 
+    margin-right: 5px;
+    border-color: black;
+    border-radius: 10px;
 }
 
 .SearchBar button {
     margin-right: 5px;
     margin-left: 5px;
     border-radius: 10px;
+    border-color: black;
 }
 
 .dark {
@@ -144,3 +150,4 @@
       text-align: left;
     }
   }
+
