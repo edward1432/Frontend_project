@@ -20,18 +20,20 @@ function MuseumPage () {
 
     return(
         <>
+        <section>
         <div className = "museum-page">
             <h1>{museum.name}</h1>
         </div>
-        <div>
-            <ol>
+        <div>Exhibits:
+            <ul>
                 {exhibits && exhibits.map(exhibit => 
                     <li key={exhibit.id}>
-                        {exhibit.name}
+                        <a href={"/exhibitpage/" + exhibit.id}>{exhibit.name}</a>
                     </li>)}
-            </ol>
+            </ul>
         </div>
         <AddExhibitToMuseum />
+        </section>
         </>
     )
 }

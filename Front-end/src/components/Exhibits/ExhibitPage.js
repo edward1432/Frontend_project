@@ -20,17 +20,19 @@ function ExhibitPage () {
 
     return(
         <>
+        <section>
         <div className = "exhibit-page">
             <h1>{exhibit.name}</h1>
         </div>
-        <div>
-            <ol>
+        <div>Contains artefacts:
+            <ul>
                 {artefacts && artefacts.map(artefact => 
                     <li key={artefact.id}>
-                        {artefact.name}
+                        <a href={"/artefactpage/" + artefact.id}>{artefact.name}</a>
                     </li>)}
-            </ol>
+            </ul>
         </div>
+        </section>
         </>
     )
 

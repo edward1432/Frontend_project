@@ -33,6 +33,7 @@ function ArtefactPage () {
 
     return(
         <>
+        <section>
         <div className = "artefact-page">
             <h1>{artefact.name}</h1>
         </div>
@@ -264,7 +265,7 @@ function ArtefactPage () {
         <br></br>
       </form>
     </div>
-
+    </section>
         </>
     )
 
