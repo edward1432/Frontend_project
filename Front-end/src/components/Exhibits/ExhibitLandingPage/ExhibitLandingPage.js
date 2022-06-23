@@ -8,7 +8,7 @@ function ExhibitLandingPage () {
   return(
     <>
       <div className="ExhibitLandingPage">
-        <h1>Exhibits</h1>
+        <h1 class = "name">Exhibits</h1>
         <ExhibitTable />
         <CreateExhibit />
 

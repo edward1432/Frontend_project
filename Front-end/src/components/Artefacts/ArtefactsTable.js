@@ -63,7 +63,8 @@ const ArtefactsTable = () => {
 
   return (
     <>
-    <Paper sx={{ width: '75%', overflow: 'hidden'}}>
+    <section>
+    <Paper sx={{ width: '100%', overflow: 'hidden'}}>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -111,6 +112,7 @@ const ArtefactsTable = () => {
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
     </Paper>
+    </section>
     </>
   )
 

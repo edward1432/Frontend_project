@@ -7,7 +7,7 @@ function StaffLandingPage () {
   return (
     <>
       <div className = "StaffLandingPage">
-        <h1>Staff</h1>
+        <h1 class = "name">Staff</h1>
         <StaffTable />
         <HireStaff />
 
