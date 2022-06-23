@@ -8,6 +8,15 @@ export function getAllStaff (setStaff) {
     }).catch((err) => console.log(err));
 }
 
+export function getStaffByID2 (setStaff, id) {
+  axios.get('http://127.0.0.1:8080/staff')
+  .then(res => {
+    const matchingStaff = res.data.filter(staff => staff.id == id);
+    console.log(matchingStaff)
+    setStaff(matchingStaff[0]);
+  }).catch((err) => console.log(err));
+}
+
 export function getStaffById (setStaff, id) {
     axios.get(`http://127.0.0.1:8080/staff/` + id).then(res =>{
     const staff = res.data;

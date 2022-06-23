@@ -11,7 +11,7 @@ function MuseumPage () {
     const [exhibits, setExhibits] = useState([]);
 
     if (!museum.id){
-    getMuseum(params.id, setMuseum, onError);
+    getMuseum(params.id, setMuseum);
     }
 
     useEffect(() => {
