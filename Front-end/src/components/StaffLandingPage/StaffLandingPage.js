@@ -9,6 +9,7 @@ function StaffLandingPage () {
       <div className = "StaffLandingPage">
         <h1 class = "name">Staff</h1>
         <StaffTable />
+        <br></br>
         <HireStaff />
 
 

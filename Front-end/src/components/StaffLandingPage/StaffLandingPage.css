@@ -6,3 +6,24 @@
     justify-content: center;
     align-content: center;
 }
+
+.hire-staff-button{
+    margin-left: 20px;
+    height: 25px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid black;
+  }
+
+.hire-staff-button{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.hire-staff-form {
+    display: inline-block;
+    margin-left: 20px;
+}

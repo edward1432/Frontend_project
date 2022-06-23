@@ -28,19 +28,25 @@ const CreateExhibit = () => {
 }
 
   return (
-    <div>
+    <div class='exhibit-form'>
       <form onSubmit = {handleSubmit}>
+        <div class='exhibit-name'>
         <label>
             Exhibit Name:
             <input type = "text" name = "name" onChange = {handleNameChange} />
         </label><br></br>
 
+        </div>
+
+        <div class = 'museum-id'>
         <label>
             Museum Id:
             <input type="number" name='museum_id' onChange={handleMuseum_IdChange} />
         </label>
+        </div>
+       
         
-        <button type = "submit" id="button">Add a new exhibit</button><br></br>
+        <button class = 'add-exhibit-button' type = "submit" id="button">Add a new exhibit</button><br></br>
         <br></br>
       </form>
     </div>
