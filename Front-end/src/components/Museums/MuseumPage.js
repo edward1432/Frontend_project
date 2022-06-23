@@ -1,9 +1,7 @@
 import React from "react";
-import { PropTypes } from "@mui/material";
 import { useParams } from "react-router-dom";
 import { getMuseum } from "./Axios/MuseumAPI";
 import {useState, useEffect} from "react";
-import addExhibitToMuseum from "./AddExhibitToMuseum";
 import AddExhibitToMuseum from "./AddExhibitToMuseum";
 
 function MuseumPage () {
