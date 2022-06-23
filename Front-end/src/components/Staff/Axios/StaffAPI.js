@@ -17,6 +17,28 @@ export function getStaffByID2 (setStaff, id) {
   }).catch((err) => console.log(err));
 }
 
+function findExhibitByID (exhibits, id){
+  const matchingExhibits = exhibits.filter(exhibit => id == exhibit.id);
+  return matchingExhibits[0];
+}
+
+export function getStaffByID3 (setStaff, id) {
+  axios.get('http://127.0.0.1:8080/staff')
+  .then(res => {
+    const matchingStaff = res.data.filter(staff => staff.id == id);
+    console.log(matchingStaff)
+    axios.get('http://127.0.0.1:8080/exhibit')
+    .then(rese => {
+      const exhibits = rese.data;
+      const staff = matchingStaff[0];
+      const exhibitsForStaff = staff.exhibitIds.map(id => findExhibitByID(exhibits, id))
+      staff.exhibits = exhibitsForStaff;
+      console.log(staff)
+      setStaff(staff);
+    })
+  }).catch((err) => console.log(err));
+}
+
 export function getStaffById (setStaff, id) {
     axios.get(`http://127.0.0.1:8080/staff/` + id).then(res =>{
     const staff = res.data;

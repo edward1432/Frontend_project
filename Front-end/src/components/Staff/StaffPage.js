@@ -1,21 +1,22 @@
 import React from "react";
-import { PropTypes } from "@mui/material";
 import { useParams } from "react-router-dom";
 import {useState, useEffect} from "react";
-import { getStaffByID2 } from '../Staff/Axios/StaffAPI';
+import { getStaffByID3 } from '../Staff/Axios/StaffAPI';
 import AssignStaff from "./AssignStaff";
 
 function StaffPage () {
 
     const params = useParams();
-    const [staff, setStaff] = useState({});
+    const [staff, setStaff] = useState({exhibits: []});
+    const [exhibits, setExhibits] = useState([])
 
     if (!staff.id){
-        getStaffByID2(setStaff, params.id);
+        getStaffByID3(setStaff, params.id);
     }
 
     // useEffect(() => {
-    //     setExhibits(staff.exhibits);
+    //     preventdefault()
+    //     getStaffByID2(setStaff, params.id);
     // })
 
     return(
@@ -30,7 +31,14 @@ function StaffPage () {
             <p>D.O.B: {staff.dob}</p>
             <p>Address: {staff.address}</p>
             <p>Salary: £{staff.salary}</p>
-            <p>{staff.exhibitIds}</p>
+            <p>Assigned to exhibits:
+                <ul>
+                {staff.exhibits.map(exhibit => 
+                    <li key={exhibit.id}>
+                        <a href={"/exhibitpage/" + exhibit.id}>{exhibit.name}</a>
+                    </li>)}
+                </ul>
+            </p>
         </div>
         <AssignStaff staID={staff.id}/>
         </section>
